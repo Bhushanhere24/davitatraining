@@ -6,6 +6,7 @@ public class CitiIdValidation {
     public static boolean isValidCitiId(String citiId) {
         if (citiId == null || citiId.length() != 10) {
             return false;
+            //return false
         }
         return citiId.startsWith("CT") && citiId.substring(2).matches("\\d{8}");
     }
